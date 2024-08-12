@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_ENDPOINT = "http://localhost:5000/api/banner";
+const API_ENDPOINT = `${import.meta.env.VITE_BACKEND_URI}/api/banner`;
 
 export const fetchBannerData = async () => {
   const response = await axios.get(API_ENDPOINT);
