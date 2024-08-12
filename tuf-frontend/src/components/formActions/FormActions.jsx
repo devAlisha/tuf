@@ -6,15 +6,15 @@ const FormActions = ({ isEditable, onEdit, onSave, onCancel, isLoading }) => {
   return (
     <Stack direction="row" spacing={4}>
       {!isEditable ? (
-        <Button colorScheme="teal" onClick={onEdit}>
+        <Button colorScheme="purple" variant={'outline'} onClick={onEdit}>
           Edit
         </Button>
       ) : (
         <>
-          <Button colorScheme="teal" onClick={onSave} isLoading={isLoading}>
+          <Button colorScheme="purple" variant={'outline'} onClick={onSave} isLoading={isLoading}>
             Save
           </Button>
-          <Button colorScheme="gray" onClick={onCancel}>
+          <Button colorScheme="red" variant={'outline'} onClick={onCancel}>
             Cancel
           </Button>
         </>
